@@ -1,24 +1,26 @@
 * Notes on emacs keybindings
 ** Keybindings to Memorize 
-|------------+----------------+----------------------------------------------------------------|
-| keybinding | elisp function | notes                                                          |
-|------------+----------------+----------------------------------------------------------------|
-| C-x `      | next-error     | Visits next 'next-error' message and corresponding source code |
-|            |                |                                                                |
-|            |                |                                                                |
+|------------+----------------+-------------------------------------------------------------------|
+| keybinding | elisp function | notes                                                             |
+|------------+----------------+-------------------------------------------------------------------|
+| C-x `      | next-error     | Visits next 'next-error' message and corresponding source code    |
+| C-c =      | align-regexp   | align region by passed in regexp (handy for lining up assignments |
+|            |                |                                                                   |
 
 
 ** Custom Keybindings
-|------------+--------------------------+------------------------------|
-| keybinding | elisp function           | notes                        |
-|------------+--------------------------+------------------------------|
-| C-x,       | point-to-top             | place point at top of window |
-| C-x.       | point-to-bottom          | place at bottom of window    |
-| C-x C-m    | execute-extended-command | alias for M-x                |
-| C-+        | text-scale-increase      | increase font                |
-| C--        | text-scale-decrease      | decrease font                |
-| C-z        | undo                     |                              |
-| C-x C-c    | confirm-exit-emacs       | confirm exit                 |
+|------------+--------------------------+----------------------------------|
+| keybinding | elisp function           | notes                            |
+|------------+--------------------------+----------------------------------|
+| C-x,       | point-to-top             | place point at top of window     |
+| C-x.       | point-to-bottom          | place at bottom of window        |
+| C-x C-m    | execute-extended-command | alias for M-x                    |
+| C-+        | text-scale-increase      | increase font                    |
+| C--        | text-scale-decrease      | decrease font                    |
+| C-z        | undo                     |                                  |
+| C-x C-c    | confirm-exit-emacs       | confirm exit                     |
+| C-c =      | align-regexp             | align region by passed in regexp |
+|            |                          |                                  |
 
 
 ** Mark and Point Shortcuts
@@ -97,3 +99,19 @@
 | C-h m      | describe-mode     | describe current mode                                |
 | C-h v      | describe-variable | describe variable, defaults to variable at point     |
 |            |                   |                                                      |
+
+** Magit 
+|------------+-------------------------+--------------------------------------------------|
+| keybinding | elisp function          | notes                                            |
+|------------+-------------------------+--------------------------------------------------|
+| C-x g      | magit-status            | show magit (git) status for current buffers repo |
+| s          | magit-stage-file-point  | in magit buffer, stage file at point             |
+| i          | magit-ignore-file-point | in magit buffer, add file at point to .gitignore |
+| I          |                         | add file to .git/info/Exclude                    |
+| u          | magit-unstage-point     | unstage file at point (much easier than git cli) |
+| c          | magit-commit            | commit index, open buffer for commit message     |
+| C-c C-c    |                         | save commit message, create commit               |
+| P P        |                         | Push commit at point to origin                   |
+
++ run `C-h m` in magit buffer to see more shortcuts.
++ run `C-h i magit` to read Magit's extensive documentation.
