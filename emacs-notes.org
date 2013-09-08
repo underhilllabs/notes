@@ -84,3 +84,16 @@
 | C-x C-e     | kmacro-end-or-call-macro    | end recording macro or call last macro if not recording |
 | C-x C-k C-l | kmacro-call-ring-2nd-repeat | Execute second keyboard macro in macro ring.            |
 |             |                             |                                                         |
+
+** Help System
+|------------+-------------------+------------------------------------------------------|
+| keybinding | elisp function    | notes                                                |
+|------------+-------------------+------------------------------------------------------|
+| C-h a      | apropos           | shows functions related to keyword entered.          |
+| C-h b      | describe-bindings | describe keybindings for current buffer and globally |
+| C-h f      | describe-function | describe function, defaults to function at point     |
+| C-h k      | describe-key      | shows what key is bound to                           |
+| C-h i      | info              | open info browser                                    |
+| C-h m      | describe-mode     | describe current mode                                |
+| C-h v      | describe-variable | describe variable, defaults to variable at point     |
+|            |                   |                                                      |
