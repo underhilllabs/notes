@@ -1,0 +1,4 @@
+* buy parts
+* the build
+** add cpu to mb
+*** 

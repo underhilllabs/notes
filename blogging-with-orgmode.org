@@ -1,0 +1,5 @@
+* It's time to try Blogging with Org-mode for Emacs
+
+** Org-mode is a mode in Emacs
+Org-mode was originally designed as an Emacs mode for taking notes and
+planning out your life. 

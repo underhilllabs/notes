@@ -1,0 +1,122 @@
+#+TITLE:     Blogging with Org-Mode
+#+AUTHOR:    bart
+#+EMAIL:     bart@panther-laptop
+#+DATE:      2011-05-20 Fri
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+* Blogging with Org-mode
+** Post Options
+*** Header Options
+- use a different stylesheet
+#+STYLE: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+*** COnfiguration Options for .emacs file 
+** Code Blocks
+x#+begin_src 
+x#+end_src
+** config
+#+begin_src emacs-lisp
+  (org-publish-project-alist
+   ("project-name" 
+    :property value 
+    :base-directory "~/blog/posts/" 
+    :publishing-directory "~/public_html/blog/posts/"
+    :base-extension "any"
+    :table-of-contents nil
+    :preserve-breaks t
+    :sub-superscript nil
+    :skip-before-first-heading t
+    :author "Seamus McGraw"
+    :style " <link rel=stylesheet type=text/css href=stylesheet.css />"
+    :inline-images t
+    ))
+  
+#+end_src
+
+       
+
+** CSS
+*** CSS from Emacs-Fu for Zenburn themed Code Blocks
+#+begin_src css
+  /* emacs-code -----------------------*/
+  /* zenburnesque code blocks in for html-exported org mode */
+  pre.src {
+     background: #3f3f3f;
+     color: #dcdccc;
+  }
+  .org-preprocessor {
+     color: #8cd0d3;
+  }
+  .org-preprocessor {
+     color: #8cd0d3;
+  }
+  .org-variable-name {
+     color: #f0dfaf;
+  }
+  .org-string {
+     color: #cc9393;
+  }
+  .org-type {
+     color: #dfdfbf;
+     font-weight: bold;
+  }
+  .org-function-name {
+     color: #8cd0d3;
+     font-weight: bold;
+  }
+  .org-keyword {
+     color: #f0dfaf;
+     font-weight: bold;
+  }
+  .org-comment {
+     color: #7f9f7f;
+  }
+  .org-doc {
+     color: #afd8af;
+  }
+  .org-comment-delimiter {
+     color: #708070;
+  }
+  .org-constant {
+     color: #dca3ac;
+     font-weight:bold;
+  }
+  .org-builtin {
+     color: #7f9f7f;
+  }
+  .warning,  .org-warning {
+     color: yellow;
+     font-weight: bold
+  }
+  /* emacs other stuff --------------------- */
+  .org-date, .org-org-date {
+  /* org-date */
+     color: #00ffff;
+     text-decoration: underline;
+  }
+  .org-hide, .org-org-hide {
+  /* org-hide */
+     color: #000000;
+  }
+  .org-level-1, .org-org-level-1  {
+  /* org-level-1 */
+     color: #356da0;
+  }
+  .org-level-2,.org-org-level-2 {
+  /* org-level-2 */
+     color: #7685de;
+  }
+  .org-todo,.org-org-todo {
+  /* org-todo */
+     color: #ffc0cb;
+     font-weight: bold;
+  }
+#+end_src

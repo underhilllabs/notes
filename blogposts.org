@@ -1,0 +1,24 @@
+* Tasks
+* Ideas for Denver Droid Blog Posts
+** DONE blog post on using git and github.
+   SCHEDULED: <2011-08-09 Tue> CLOSED: [2011-08-22 Mon 09:17]
+** TODO blog post on using Org-mode to outline/create blog posts
+** TODO blog post on publishing blog posts to html and website from Org-mode docs.
+** DONE blog post on drush for routine drupal simple sys admin tasks.
+   SCHEDULED: <2011-08-08 Mon> CLOSED: [2011-08-22 Mon 09:17]
+** DONE blog and video about Emacs and re-builder
+   SCHEDULED: <2011-08-06 Sat> CLOSED: [2011-08-22 Mon 09:17]
+** TODO blog on using Tramp in Emacs
+*** use tramp to sudo edit config files
+/sudo::/etc/apache2/sites-available/default
+*** edit remote files with local emacs.
+/ssh:philbert@:example.com:.emacs
+**** if you have ssh 
+*** create new files on server
+C-x C-f will start from last used directory, so if you now type C-x
+C-f it will show a path on remote server, just type in a filename to
+create the file on the remote server from local emacs.
+*** set tramp-default-user-alist
+*** tab-completion works remotely
+*** dired modes works remotely
+**** use m to mark files, R to rename/move files, etc

@@ -1,0 +1,7 @@
+* xml builder code
+xml.posts(:tag=>'', :user=> @user.name) do 
+  @bookmarks.each do |bookmark|
+    xml.post(:href => bookmark.,:description => bookmark.desc, :hash => bookmark.guid, :tag => bookmark.tags ,:time => bookmark.time ) do
+    end
+  end
+end

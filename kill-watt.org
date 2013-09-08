@@ -1,0 +1,44 @@
+* Measurements
+** lamp: 40 watts 
+*** 40 watts
+** New Desktop with RAM upgrade, now 8G, ddr3-1333
+*** idle, monitor off, tor relay still running: 32 watts
+*** avg usage: monitor, browsing, listening to music 64 watts
+*** Open-Arena: 90 watts, running full screen
+** laptop no screen, plugged into the 23" monitor: ~52 watts
+*** 52 watts
+*** 56 watts with speakers and streaming google music
+** laptop, screen on, but not plugged into monitor: ~34 watts
+*** 34 watts
+** new Desktop, monitor, speakers, 6G RAM: 78 watts
+*** 78 watts
+*** idle: 39 watts
+** new Desktop, monitor, playing game, 6G: 90 watts
+** old Desktop, monitor, 
+*** 240 watts maxing out when browsing the web
+*** idling?? don't recall
+
+
+* log
+** 18:16 days:hours
+** 14.31 Kw
+** $1.14
+** 18/14 = 1.28 Kw/day
+
+** guess: 4*80watts + 20*40watts = 1120 (1.12 Kw/day)
+
+* Electric Monthly Kw Usage
+** 3-20 to 4-19
+*** 249 Kw
+** 5-18 to 6-17
+*** 242 Kw
+** 6-19 to 7-18
+*** 286 Kw
+** 7-18 to 8-16
+*** 255 Kw
+** 10-18-2012 to 11-15-2012
+*** 293 Kw
+
+** 2:13 days:hours
+*** 2.35 Kw
+*** so avg 39 watts/hr

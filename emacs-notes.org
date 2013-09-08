@@ -1,0 +1,39 @@
+* Notes on emacs keybindings
+** Custom
+|------------+--------------------------+------------------------------|
+| keybinding | elisp function           | notes                        |
+|------------+--------------------------+------------------------------|
+| C-x,       | point-to-top             | place point at top of window |
+| C-x.       | point-to-bottom          | place at bottom of window    |
+| C-x C-m    | execute-extended-command | alias for M-x                |
+| C-+        | text-scale-increase      | increase font                |
+| C--        | text-scale-decrease      | decrease font                |
+| C-z        | undo                     |                              |
+| C-x C-c    | confirm-exit-emacs       | confirm exit                 |
+|            |                          |                              |
+
+
+
+  
+** Mark and Point Shortcuts
+|------------+-------------------------+------------------------------|
+| keybinding | elisp function          | notes                        |
+|------------+-------------------------+------------------------------|
+| C-x,       | point-to-top            | place point at top of window |
+| C-x.       | point-to-bottom         | place at bottom of window    |
+| C-SPC      | set-mark-command        | set mark                     |
+| C-x C-x    | exchange-point-and-mark | exchange point and mark      |
+| C-w        | kill-region             |                              |
+| M-w        | kill-ring-save          | Yank region                  |
+|            |                         |                              |
+
+** Region Specific Shortcuts
+|------------+-----------------------------+-------|
+| keybinding | elisp function              | notes |
+|------------+-----------------------------+-------|
+| C-M ;      | comment-region              |       |
+| C-M \      | indent-region               |       |
+| C-x C-k r  | apply-macro-to-region-lines |       |
+|            |                             |       |
+
+**  

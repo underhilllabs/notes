@@ -1,0 +1,48 @@
+* Learn Calculus
+** TODO review calculus chapter 1
+   :PROPERTIES:
+   :ID:       09503dac-a79c-4cc2-9515-ec2ef6e38a13
+   :END:
+** TODO review Logarithms
+   :PROPERTIES:
+   :ID:       5d2ab1a2-3d16-46d2-b917-2ebf6d48fd8a
+   :END:
+** TODO review trigonometry
+   :PROPERTIES:
+   :ID:       16725f66-c5a8-4b17-b77b-5d8fef2b2322
+   :END:
+
+* Python
+** DONE watch MIT OCW 6.01 lecture 3
+   CLOSED: [2010-07-09 Fri 10:39]
+   :PROPERTIES:
+   :ID:       0f1f3694-23b1-45d3-85ee-2f3a984aaab5
+   :END:
+
+* MIT 6.001 Structure and Interpretation of Computer Programs
+** TODO read SICP sec 2.1
+   :PROPERTIES:
+   :ID:       0e259639-3f47-4584-8169-9297f270d49f
+   :END:
+
+
+* start by creating a simple game in your new language
+** hangman
+*** DONE python version
+*** TODO scheme or elisp version of hangman
+    :PROPERTIES:
+    :ID:       4fef1a2c-b183-46a1-9859-e85bb12a8a58
+    :END:
+** Space Invaders!  or (Garlic Invaders!)
+*** TODO Space Invaders in Python
+    :PROPERTIES:
+    :ID:       aa7f5114-4827-448b-90a0-4ff4653b2302
+    :END:
+use PyGame
+*** in Closure
+*** TODO Space Invaders in Scheme
+    :PROPERTIES:
+    :ID:       fe405d9c-b2dd-4e01-95c6-1430a8912254
+    :END:
+
+This will be addictly fun and will challenge you in the new languages
