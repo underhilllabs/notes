@@ -1,4 +1,13 @@
 * Notes on emacs keybindings
+** Keybindings to Memorize 
+|------------+----------------+----------------------------------------------------------------|
+| keybinding | elisp function | notes                                                          |
+|------------+----------------+----------------------------------------------------------------|
+| C-x `      | next-error     | Visits next 'next-error' message and corresponding source code |
+|            |                |                                                                |
+|            |                |                                                                |
+
+
 ** Custom Keybindings
 |------------+--------------------------+------------------------------|
 | keybinding | elisp function           | notes                        |
@@ -10,7 +19,7 @@
 | C--        | text-scale-decrease      | decrease font                |
 | C-z        | undo                     |                              |
 | C-x C-c    | confirm-exit-emacs       | confirm exit                 |
-|            |                          |                              |
+
 
 ** Mark and Point Shortcuts
 |------------+-------------------------+------------------------------|
@@ -22,7 +31,7 @@
 | C-x C-x    | exchange-point-and-mark | exchange point and mark      |
 | C-w        | kill-region             |                              |
 | M-w        | kill-ring-save          | Yank region                  |
-|            |                         |                              |
+
 
 ** Region Specific Shortcuts
 |------------+-----------------------------+-------|
@@ -31,7 +40,7 @@
 | C-M ;      | comment-region              |       |
 | C-M \      | indent-region               |       |
 | C-x C-k r  | apply-macro-to-region-lines |       |
-|            |                             |       |
+
 
 ** Editing Commands
 |------------+----------------+----------------------------------------------------------------------|
@@ -44,16 +53,34 @@
 | M-y        | yank-pop       | replace just-yanked stretch of killed text with a different stretch. |
 |            |                |                                                                      |
 | M-z        | zap-to-char    | kill from point to char                                              |
-|            |                |                                                                      |
+
 
 ** Movement Commands
-|------------+-------------------+----------------------------------------------------------------------|
-| keybinding | elisp function    | notes                                                                |
-|------------+-------------------+----------------------------------------------------------------------|
-| C-a        | beginning-of-line |                                                                      |
-| C-e        | end-of-line       |                                                                      |
-| C-f        | forward-char      |                                                                      |
-| M-f        | forward word      |                                                                      |
-| C-b        | backward-char     |                                                                      |
-| M-b        | backward-word     |                                                                      |
-|            |                   |                                                                      |
+|------------+----------------------+----------------------------------------------------|
+| keybinding | elisp function       | notes                                              |
+|------------+----------------------+----------------------------------------------------|
+| C-a        | beginning-of-line    |                                                    |
+| C-e        | end-of-line          |                                                    |
+| C-f        | forward-char         |                                                    |
+| M-f        | forward word         |                                                    |
+| C-b        | backward-char        |                                                    |
+| M-b        | backward-word        |                                                    |
+| C-v        | scroll-forward-page  |                                                    |
+| M-v        | scroll-backward-page |                                                    |
+| M->        | end-of-buffer        | move point to the end of buffer                    |
+| M-<        | beginning-of-buffer  | move point to the beginning of the buffer          |
+| M-g g      | goto-line            | asks for line number and moves point to that line. |
+|            |                      |                                                    |
+
+
+** Macro Keybindings
+|-------------+-----------------------------+---------------------------------------------------------|
+| keybinding  | elisp function              | notes                                                   |
+|-------------+-----------------------------+---------------------------------------------------------|
+| C-x (       | kmacro-start-macro          | start recording macro                                   |
+| <f3>        | kmacro-start-macro          | start recording macro                                   |
+| C-x )       | kmacro-end-macro            | end recording macro                                     |
+| <f4>        | kmacro-end-or-call-macro    | end recording macro or call last macro if not recording |
+| C-x C-e     | kmacro-end-or-call-macro    | end recording macro or call last macro if not recording |
+| C-x C-k C-l | kmacro-call-ring-2nd-repeat | Execute second keyboard macro in macro ring.            |
+|             |                             |                                                         |
