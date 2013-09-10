@@ -5,6 +5,9 @@
 |------------+----------------+-------------------------------------------------------------------|
 | C-x `      | next-error     | Visits next 'next-error' message and corresponding source code    |
 | C-c =      | align-regexp   | align region by passed in regexp (handy for lining up assignments |
+| C-x r l    | bookmarks-list | list all of the bookmarks                                         |
+| C-x r m    | bookmark-mark  | set a bookmark for the current line in the current file           |
+| C-x r b    | bookmark-jump  | jump to a specified bookmark                                      |
 |            |                |                                                                   |
 
 
@@ -101,17 +104,23 @@
 |            |                   |                                                      |
 
 ** Magit 
-|------------+-------------------------+--------------------------------------------------|
-| keybinding | elisp function          | notes                                            |
-|------------+-------------------------+--------------------------------------------------|
-| C-x g      | magit-status            | show magit (git) status for current buffers repo |
-| s          | magit-stage-file-point  | in magit buffer, stage file at point             |
-| i          | magit-ignore-file-point | in magit buffer, add file at point to .gitignore |
-| I          |                         | add file to .git/info/Exclude                    |
-| u          | magit-unstage-point     | unstage file at point (much easier than git cli) |
-| c          | magit-commit            | commit index, open buffer for commit message     |
-| C-c C-c    |                         | save commit message, create commit               |
-| P P        |                         | Push commit at point to origin                   |
+|------------+-------------------------+---------------------------------------------------------------|
+| keybinding | elisp function          | notes                                                         |
+|------------+-------------------------+---------------------------------------------------------------|
+| C-x g      | magit-status            | show magit (git) status for current buffers repo              |
+| s          | magit-stage-file-point  | in magit buffer, stage file at point to index                 |
+| i          | magit-ignore-file-point | in magit buffer, add file at point to .gitignore              |
+| C-u i      | magit-prefix-ignore     | Asks for file to ignore (can add regex to .gitignore)         |
+| I          |                         | add file to .git/info/exclude                                 |
+| u          | magit-unstage-point     | unstage file at point (much easier than git cli)              |
+| c          | magit-commit            | commit index, open buffer for commit message                  |
+| C-c C-c    |                         | save commit message, create commit                            |
+| l l        | magit-log-short         | show git log                                                  |
+| l L        | magit-log-long          | show git log, with some details (lines added/deleted)         |
+| l l <CR>   |                         | once in git log, click enter on SHA1 opens diff in new buffer |
+| P P        |                         | Push commit at point to origin                                |
+|            |                         |                                                               |
 
-+ run `C-h m` in magit buffer to see more shortcuts.
++ run `C-h m` in magit status buffer to see more shortcuts.
 + run `C-h i magit` to read Magit's extensive documentation.
++ run `l` in magit status buffer to open up git log dialog
