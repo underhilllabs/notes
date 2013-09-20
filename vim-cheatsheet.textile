@@ -2,8 +2,8 @@ h2. Vim Cheatsheet
 
 h3. Navigation on current line
 
-| f<char> | jump to <char> on current line  | 
-| ;       | jump to next occurrence of <char>   |
+| f<char> | jump to <char> on current line       |
+| ;       | jump to next occurrence of <char>    |
 | ,       | jump to previous occurrence          |
 | t<char> | jump 'til <char> (char before <char> |
 
