@@ -1,13 +1,13 @@
-h2. Vim Cheatsheet
+## Vim Cheatsheet
 
-h3. Navigation on current line
+### Navigation on current line
 
-| f<char> | jump to <char> on current line       |
-| ;       | jump to next occurrence of <char>    |
+| f&lt;char&gt; | jump to &lt;char&gt; on current line       |
+| ;       | jump to next occurrence of &lt;char&gt;    |
 | ,       | jump to previous occurrence          |
-| t<char> | jump 'til <char> (char before <char> |
+| t&lt;char&gt; | jump 'til &lt;char&gt; (char before &lt;char&gt;) |
 
-h3. Jump navigation
+### Jump navigation
 
 | gf  | jump to file under cursor   |
 | C-o | jump back to previous cursor location |
