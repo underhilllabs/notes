@@ -1,18 +1,18 @@
-## Vim Cheatsheet
+h2. Vim Cheatsheet
 
-### Navigation on current line
+h3. Navigation on current line
 
 | f<char> | jump to <char> on current line  | 
-| ;       | jump to next occurrence of <char>|
-| ,       | jump to previous occurrence |
-| t<char> | jump 'til <char> (char before <char>|
+| ;       | jump to next occurrence of <char>   |
+| ,       | jump to previous occurrence          |
+| t<char> | jump 'til <char> (char before <char> |
 
-### jump navigation
+h3. Jump navigation
 
-| gf | jump to file under cursor   |
+| gf  | jump to file under cursor   |
 | C-o | jump back to previous cursor location |
 | *   | jump to next occurrence of word under cursor |
 | #   | jump to previous occurrence of word under cursor |
 | H   | Move cursor to first visible line in window |
 | M   | Move cursor to middle line in window |
-| L   | Move cursor to last visible line in window|
+| L   | Move cursor to last visible line in window  |
